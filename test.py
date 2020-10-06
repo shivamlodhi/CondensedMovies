@@ -59,6 +59,8 @@ def main(config):
     model = model.to(device)
     model.eval()
 
+    
+    # to calculate total loss
     total_loss = 0.0
     total_metrics = torch.zeros(len(metrics))
 
